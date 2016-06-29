@@ -1,3 +1,3 @@
 Swiftype.configure do |config|
-  config.api_key = ENV['SWIFTYPE_API_KEY']
+  config.api_key = ENV['iw3TzaM7DFuDSneCFe51']
 end

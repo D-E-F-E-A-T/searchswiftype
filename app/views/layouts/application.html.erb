@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html></html>
+<html>
 <head>
   <title>Pin Board</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -11,4 +11,17 @@
     <%= content_tag :div, msg, class: "alert alert-info" %>
   <% end %>
   <%= yield %>
+<script type="text/javascript">
+$(function() {
+  $('#st-search-input').swiftypeSearch({
+    resultContainingElement: '#st-results-container',
+    engineKey: '<%= ENV['8QQjWLJyMfs-4zd97bG4'] %>'
+  });
+  $('#st-search-input').swiftype({
+    suggestFields: 'title',
+    engineKey: '<%= ENV['8QQjWLJyMfs-4zd97bG4'] %>'
+  });
+});
+</script>
 </body>
+</html>
